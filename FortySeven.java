@@ -1,0 +1,38 @@
+/*Method Overlaoding
+	function(ch, n, m)
+		ch = '@'
+		n = 3
+		m = 2
+			@ @ @
+			@ @ @
+	function(ch, n)
+		ch = '/'
+		n = 2
+			/ /
+			/ /
+*/
+import java.util.*;
+import java.io.*;
+public class FortySeven {
+	
+	public static Scanner sc = new Scanner(System.in);
+	public static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+	public void function(char ch, int n) {
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				System.out.print(ch);
+			}
+			System.out.println();
+		}
+	}
+
+	public void function(char ch, int n, int m) {
+		for (int i = 0; i < m; i++) {
+			for (int j = 0; j < n; j++) {
+				System.out.print(ch);
+			}
+			System.out.println();
+		}
+	}
+}

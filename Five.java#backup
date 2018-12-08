@@ -1,0 +1,42 @@
+import java.util.*;
+public class Five {
+	
+	public static Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		int a[] = new int [10];
+		int ce = 0, co = 0;
+		for (int i = 0; i < 10; i++) {
+			j.p("Number: ");
+			a[i] = sc.nextInt();
+			if (a[i] % 2 == 0) {
+				ce++;
+			}
+			else {
+				co++;
+			}
+		}
+		int ae[] = new int [ce];
+		int ao[] = new int [co];
+		for (int i = 0, ie = 0, io = 0; i < 10; i++) {
+			if (a[i] % 2 == 0) {
+				ae[ie] = a[i];
+				ie++;
+			}
+			else {
+				ao[io] = a[i];
+				io++;
+			}
+		}
+		j
+		j.pl("\tEVEN NUMBERS");
+		for (int i = 0; i < (ae.length); i++) {
+			System.out.print(ae[i] + "\t");
+		}
+		j.pl("\n");
+		j.pl("\tODD NUMBERS");
+		for (int i = 0; i < (ao.length); i++) {
+			System.out.print(ao[i] + "\t");
+		}
+	}
+}

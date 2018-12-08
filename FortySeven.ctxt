@@ -1,0 +1,7 @@
+#BlueJ class context
+comment0.target=FortySeven
+comment1.params=ch\ n
+comment1.target=void\ function(char,\ int)
+comment2.params=ch\ n\ m
+comment2.target=void\ function(char,\ int,\ int)
+numComments=3

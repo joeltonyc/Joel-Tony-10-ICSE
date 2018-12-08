@@ -1,0 +1,42 @@
+/**Print Mersenne Prime**/
+
+import java.util.*;
+import java.io.*;
+public class Main {
+	
+	public static Scanner sc = new Scanner(System.in);
+	public static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+	public static void main(String[] args) throws Exception {
+		mersennePrime();
+	}
+
+	public static boolean isPrime(long num){
+		if ( num > 2 && num%2 == 0 ) {
+			return false;
+		}
+		for(long i = 3; i < ((long)Math.sqrt(num) + 1); i+=2){
+			if(num % i == 0){
+				return false;
+			}
+		}
+		return true; 
+	}
+
+	public static void mersennePrime() {
+		long i = 1;
+		try {
+			for (i = 1; ; i++) {
+				if (isPrime(i)) {
+					long num = (long)(Math.pow(2, i) - 1);
+					if (isPrime(num)) {
+						System.out.println(num);
+					}
+				}
+			}
+		}
+		catch (Exception e) {
+			System.out.println("\n Printed till " + i + " power");
+		}
+	}
+}
