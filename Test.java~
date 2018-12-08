@@ -1,0 +1,47 @@
+/*Sum of 1 + 11 + 111 + 1111 + 11111 + ... n terms*/
+
+import java.io.*;
+import java.util.*;
+class Test {
+	
+	public static Scanner sc = new Scanner(System.in);
+	public static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+	public static void main(String[] args) throws Exception {
+		System.out.println("\t\tIF-ELSE");
+		ifElse();
+		System.out.println("\n\n\t\tSWITCH-CASE");
+		switchCase();
+	}
+
+	public static void ifElse() throws Exception {
+		char ch = br.readLine().charAt(0);
+		int e, w, n, s, u;
+		e = w = n = s = u = 0;
+		if (ch == 'e')
+			e++;
+		if (ch == 'w')
+			w++;
+		if (ch == 'n')
+			n++;
+		if (ch == 's')
+			s++;
+		else
+			u++;
+		System.out.printf("e-%d\tw-%d\tn-%d\ts-%d\tu-%d\n", e, w, n, s, u);
+	}
+
+	public static void switchCase() throws Exception {
+		char ch = br.readLine().charAt(0);
+		int e, w, n, s, u;
+		e = w = n = s = u = 0;
+		switch (ch) {
+			case 'e':e++;
+			case 'w':w++;
+			case 'n':n++;
+			case 's':s++;
+			default:u++;break;
+		}
+		System.out.printf("e-%d\tw-%d\tn-%d\ts-%d\tu-%d\n", e, w, n, s, u);
+	}
+}
