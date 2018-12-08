@@ -1,0 +1,23 @@
+/**Series
+	0 1 1 3 5 11 21 43 85 171 341
+	c = 2a + b**/
+
+import java.util.*;
+public class TwentyThree {
+	
+	public static Scanner sc = new Scanner(System.in);
+	
+	public static void main(String[] args) {
+		j.p("n = ");
+		int n = sc.nextInt();
+		int co = 0, a = 0, b = 1, c = 0;
+		System.out.print(a + "\t" + b + "\t");
+		while (co < (n - 2)) {
+			c = (2 * a) + b;
+			System.out.print(c + "\t");
+			a = b;
+			b = c;
+			co++;
+		}
+	}
+}
