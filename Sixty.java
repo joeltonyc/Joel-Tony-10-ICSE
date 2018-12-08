@@ -1,0 +1,17 @@
+/*Print all alphabets from A to Z*/
+
+import java.io.*;
+import java.util.*;
+class Sixty {
+	
+	public static Scanner sc = new Scanner(System.in);
+	public static BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+	public static void main(String[] args) throws Exception {
+		char ch = 'A';
+		while (ch <= 'Z') {
+			System.out.print(ch + " ");
+			ch++;
+		}
+	}
+}
